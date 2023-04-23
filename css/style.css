@@ -1,0 +1,315 @@
+header {
+    width: 100%;
+    min-height: 720px;
+}
+
+.wave {
+    position: relative;
+    /* Posicionar texto hacia abajo */
+    padding-top: 10rem;
+    /* https://cssgradient.io/ */
+    background: linear-gradient(90deg, rgba(39, 65, 234, 1) 0%, rgba(138, 151, 238, 1) 78%, rgba(223, 224, 242, 1) 100%);
+}
+
+
+/* Sirve para hacer el diseño tipo Ola de mar */
+
+.wave:before {
+    content: '';
+    position: absolute;
+    /* el boton mientras mas sube sigue subiendo */
+    bottom: 0px;
+    left: 0;
+    /* manaeja el ancho de la imagen de diseño */
+    width: 100%;
+    /* maneja la dimension de alto de la imagen  */
+    height: 260px;
+    background: url('../img/wave.png');
+    background-size: cover;
+    /* background-color: aqua; */
+    background-repeat: no-repeat;
+}
+
+
+/* Estilos a columnas  navbar */
+
+.navbar .nav-link {
+    color: white;
+    margin-right: 29px;
+    transition: 0.2s;
+}
+
+a.nav-link:hover {
+    padding-bottom: 3px;
+    border-bottom: 2px solid white;
+}
+
+.btn-custom {
+    /* creacion de borde con color blanco y grosor de 1.5px */
+    border: 1.5px solid #fff;
+    border-radius: 50px;
+    /* color de la letra del boton */
+    color: white;
+    background: none;
+    padding: 8px 20px;
+    /* fuente de la tipofragoa o letra mas claro o menos claro */
+    font-weight: 500;
+    /* permite quitar la decoración de subrayado */
+    text-decoration: none;
+    transition: all 0.6s;
+}
+
+
+/* Hover visualizacion de efecto de transicion */
+
+
+/* boton de suscribirse */
+
+.btn-custom:hover {
+    background: #fd3323;
+    border: 1.5px solid #df3323;
+    color: #fff;
+}
+
+
+/* efecto de encabezado menu */
+
+.navbar-fixed {
+    /* background-color: rgba(252, 103, 49, 1); */
+    background-color: rgba(39, 65, 234, 1);
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: all 0.6s;
+    /* agregando sombre */
+    box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0);
+}
+
+section {
+    padding: 82px 0;
+}
+
+.section-bg {
+    background-color: #f9f9fd;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+/* estilos de titulo de seccion 2 */
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #df3323;
+}
+
+
+/* estilos de contenedor de curso */
+
+.about .member {
+    padding: 30px;
+    border-radius: 20px;
+    background: #f9f9fd;
+    transition: 0.5s;
+}
+
+.about .member2 {
+    padding: 30px;
+    border-radius: 20px;
+    background: #f9f9fd;
+    transition: 0.5s;
+}
+
+.about .member2 h4 {
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 25px;
+    color: #fc562c;
+}
+
+
+/* manajea estilos de contenedor de imagenes de cursos */
+
+.about .member:hover {
+    /* rgb(77 87 222 / 30%) */
+    box-shadow: 0px 15px 30px rgb(77 87 222 / 30%);
+    background: #fff;
+}
+
+.about .member h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #fc562c;
+}
+
+
+/* estilos a imagenes */
+
+.about .member .pic {
+    overflow: hidden;
+    width: 180px;
+    border-radius: 50%;
+    background-color: aliceblue;
+}
+
+
+/* estilos de palabras en etiqueta span */
+
+.about .member span {
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+
+/* estilos de parrafos */
+
+.about .member p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+}
+
+
+/* Es el contenedor de los iconos de redes sociales */
+
+.about .member a {
+    transition: ease-in-out 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 38px;
+    height: 38px;
+    border: 1px solid;
+}
+
+
+/* agregando efecto a boton */
+
+.about .member a:hover {
+    background-color: #0061f2;
+    color: white;
+}
+
+
+/* agregando estilos a contenedores de secion 3  */
+
+.services .icon-box {
+    padding: 33px 25px;
+    text-align: center;
+    background: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 1px solid rgb(236, 233, 233);
+    border-radius: 20px;
+}
+
+.services .icon-box:hover {
+    box-shadow: 0px 15px 30px rgb(77 87 222 / 30%)
+}
+
+.services .icon-box .icon i {
+    color: #fcab44;
+    font-size: 43px;
+}
+
+.services .icon-box h4 {
+    margin-bottom: 15px;
+    color: #fc526c
+}
+
+.portfolio #portfolio-filters li {
+    cursor: pointer;
+    background-color: #0061f2;
+    list-style: none;
+    margin: 10px 5px;
+    font-weight: 500;
+    color: #444444;
+    transition: all 0.3s;
+    padding: 5px 20px;
+    border-radius: 50px;
+}
+
+footer {
+    border-top: 5 px solid #7e7e7e;
+    padding-top: 44px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer .social {
+    background: fc6731;
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+
+/* boton de subida a inicio */
+
+.go-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #0061f2;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.navbar-toggler {
+    padding: .10rem .45rem;
+    border: 1px solid white;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler i.bi-list {
+    color: white;
+    font-size: 1.6rem;
+}
+
+@media(max-width:992px) {
+    .navbar-collapse {
+        padding-bottom: 19px;
+    }
+    .wave {
+        padding-top: 6rem;
+    }
+}
+
+@media(max-width:768) {
+    .text-center-xs {
+        text-align: center;
+    }
+    .text-center-xs img {
+        width: 366px;
+    }
+}
+
+iframe {
+    max-width: 100%;
+}
